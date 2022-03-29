@@ -1,0 +1,25 @@
+block variables
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title #{title}
+        //- Default styles
+        link(rel="stylesheet" href="/src/assets/defaults/default.scss")
+        //- Page styles
+        if page_name
+            link(rel="stylesheet" href=`/src/pages/${page_name}/${page_name}.scss`)
+        //- Component styles
+        each component in components
+            link(rel="stylesheet" href=`/src/components/${component}/${component}.scss`)
+    body
+        block content
+        //- Default script
+        script(src="/src/assets/defaults/default.js")
+        //- Page script
+        if page_name
+            script(src=`/src/pages/${page_name}/${page_name}.js`)
+        //- Component scripts
+        each component in components
+            script(src=`/src/components/${component}/${component}.js`)

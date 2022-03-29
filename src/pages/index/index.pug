@@ -1,0 +1,11 @@
+extends @/defaults/default.pug
+
+block variables
+    - const title = "Главная"
+    - const page_name = "index"
+    - const components = ["cool-block"]
+
+block content
+    div 123213
+    include #/cool-block/cool-block.pug
+
