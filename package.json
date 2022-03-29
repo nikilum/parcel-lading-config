@@ -12,7 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-pug": "^2.4.0",
-    "@parcel/transformer-sass": "^2.4.0"
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel-resolver-ignore": "^2.0.0"
   },
   "dependencies": {
     "parcel": "^2.4.0",
