@@ -5,8 +5,8 @@
   "scripts": {
     "serve": "parcel src/pages/*/*.pug",
     "build": "parcel build src/pages/*/*.pug",
-    "make:component": "node parcel_helpers/make/component.js",
-    "make:page": "node parcel_helpers/make/page.js"
+    "make:component": "node cli-commands/make/component.js",
+    "make:page": "node cli-commands/make/page.js"
   },
   "author": "",
   "license": "ISC",
